@@ -23,7 +23,12 @@
 
       <div class="icons">
         <span>👤 Entrar</span>
-        <span class="cart">🛒 Carrinho</span>
+        <span class="cart" id="openCart">🛒 Carrinho</span>
+      </div>
+
+        <!-- BOTÃO HAMBÚRGUER (só aparece no mobile) -->
+       <div class="menu-toggle" id="menu-toggle">
+        ☰
       </div>
 
     </div>
@@ -85,74 +90,74 @@
 
     <div class="products">
       <h2>Frutas e Verduras</h2>
-      <img src="./maca.avif" alt="Maçã Gala">
+      <img src="./img/products/maca.avif" alt="Maçã Gala">
       <h1>Maçã Gala</h1>
       <p>R$ 10,00</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Maçã Gala" data-price="10.00">+</button>
     </div>
 
     <div class="products">
       <h2>Frutas e Verduras</h2>
-      <img src="./bunch-fresh-bananas-isolated-white-background.jpg" alt="Banana Prata">
+      <img src="./img/products/bunch-fresh-bananas-isolated-white-background.jpg" alt="Banana Prata">
       <h1>Banana Prata</h1>
       <p>R$ 7,50</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Banana Prata" data-price="7.50">+</button>
     </div>
 
     <div class="products">
       <h2>Laticínios</h2>
-      <img src="./png-soy-milk-isolated-white-background.jpg" alt="Leite Integral">
+      <img src="./img/products/png-soy-milk-isolated-white-background.jpg" alt="Leite Integral">
       <h1>Leite Integral</h1>
       <p>R$ 4,80</p>
-      <button>+</button>
+      <button  class="add-cart" data-name="Leite Integral" data-price="4.80">+</button>
     </div>
 
     <div class="products">
       <h2>Padaria</h2>
-      <img src="./sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
+      <img src="./img/products/sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
       <h1>Pão Francês</h1>
       <p>R$ 0,90</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Pão Francês" data-price="0.90">+</button>
     </div>
 
     <div class="products">
       <h2>Padaria</h2>
-      <img src="./sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
+      <img src="./img/products/sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
       <h1>Pão Francês</h1>
       <p>R$ 0,90</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Pão Francês" data-price="0.90">+</button>
     </div>
 
     <div class="products">
       <h2>Padaria</h2>
-      <img src="./sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
+      <img src="./img/products/sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
       <h1>Pão Francês</h1>
       <p>R$ 0,90</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Pão Francês" data-price="0.90">+</button>
     </div>
 
     <div class="products">
       <h2>Padaria</h2>
-      <img src="./sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
+      <img src="./img/products/sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
       <h1>Pão Francês</h1>
       <p>R$ 0,90</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Pão Francês" data-price="0.90">+</button>
     </div>
 
     <div class="products">
       <h2>Padaria</h2>
-      <img src="./sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
+      <img src="./img/products/sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
       <h1>Pão Francês</h1>
       <p>R$ 0,90</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Pão Francês" data-price="0.90">+</button>
     </div>
 
     <div class="products">
       <h2>Padaria</h2>
-      <img src="./sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
+      <img src="./img/products/sourdough-yeast-sour-bread-food.jpg" alt="Pão Francês">
       <h1>Pão Francês</h1>
       <p>R$ 0,90</p>
-      <button>+</button>
+      <button class="add-cart" data-name="Pão Francês" data-price="0.90">+</button>
     </div>
 
   </section>
@@ -192,7 +197,24 @@
 
   </footer>
 
+  <!-- CARRINHO LATERAL -->
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h2>🛒 Seu carrinho</h2>
+    <button id="closeCart">✖</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-footer">
+    <p>Total: <strong id="cartTotal">R$ 0,00</strong></p>
+    <button class="checkout">Finalizar compra</button>
+  </div>
+</aside>
+
 </body>
 </html>
+
+
 
 
