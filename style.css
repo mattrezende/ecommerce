@@ -188,7 +188,7 @@ body {
 .banner2 {
   margin-top: 50px;
   height: 300px;
-  background: url(./food-8346106_1920.jpg) center/cover no-repeat;
+  background: url('./food-8346106_1920.jpg') center/cover no-repeat;
   background-position-y: 50%;
   display: flex;
   align-items: center;
@@ -309,5 +309,6 @@ img {
     gap: 10px;
   }
 }
+
 
 
